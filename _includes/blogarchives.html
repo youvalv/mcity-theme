@@ -1,0 +1,14 @@
+<div class="well" class="blogArchives">
+    <h4>Blog Archive</h4>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="list-unstyled">
+                {% for post in site.posts %}
+                <li class="blogArchives">
+                    <a href="{{post.url}}"><strong>{{post.title}}</strong></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

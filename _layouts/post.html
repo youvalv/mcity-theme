@@ -1,0 +1,19 @@
+---
+layout: page
+---
+
+<!--this layout for viewing individual blog posts -->
+<div class="row">
+    <div class="col-md-8" id="blog">
+        <h4>{{ post.title }}</h4>
+        {% if post.date %}
+            <small> {{post.date}} </small>
+        {% endif %}
+		{{ content }}
+	</div>
+
+    <div class="col-md-4">
+        <!-- Blog Categories Well -->
+        {% include blogarchives.html %}
+    </div>
+</div>
