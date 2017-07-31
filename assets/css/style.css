@@ -158,6 +158,10 @@ input#search-header:-moz-placeholder {
     padding: 2.5px;
 }
 
+.ccblog img {
+    max-width: 100%;
+}
+
 /*#footer .top-part ul li.rss:hover,*/
 
 
