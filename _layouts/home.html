@@ -1,288 +1,102 @@
----
-layout: default
----
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+    {% include base.html %}
+    <!-- load styles start -->
+    <link type="text/css" rel="stylesheet" href="{{site.baseurl}}/assets/css/normalize.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/assets/css/meridian-icons.css">
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-16730382-1']);
+        _gaq.push(['_trackPageview']);
 
-<div class="Row">
-	<div class="background fullscreen">
-		<div class="background-mobile"></div>
-		<div class="overlay-mask"></div>
-		<div class="container boxed first one">
-			<div class="overlay">
-				<div class="row">
-					<img class="title-img" src="/img/home/title-img.png" alt="Built for business - Designed for living"/>
-					<img class="title-img title-img-mobile" src="/img/home/mobile-title@2x.png" width="181" height="150" alt="Built for business - Designed for living"/>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 first show-content" data-toggle="modal" data-target="#city-news">
-						<div class="tab-wrap">
-							<div class="tab-icon">
-								<i class="icon icon-city-news-popup"></i>
-							   <img src="img/home/arrow-active.png" class="arrow" alt=""/>
-							</div>
-							<div class="tab-title">
-								<h3>City News<br />Meetings</h3>
-							</div>
-						</div>
-					</div>
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
 
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 show-content" data-toggle="modal" data-target="#events">
-						<div class="tab-wrap">
-							<div class="tab-icon">
-								<i class="icon icon-events-popup"></i>
-							   <img src="img/home/arrow-active.png" class="arrow" alt=""/>
-							</div>
-							<div class="tab-title">
-									<h3>Community Calendar</h3>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<a class="homelinks" href="/parks_rec.aspx">
-						<div class="tab-wrap">
-							<div class="tab-icon">
-								<img src="/svg/parks.svg"/>
-							</div>
-							<div class="tab-title">
-								<h3>Parks and Recreation</h3>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 last show-content" data-toggle="modal" data-target="#mayor">
-						<div class="tab-wrap">
-							<div class="tab-icon">
-								<img src="/img/tammy.jpg" class="icon mayor" alt="Mayor Tammy de Weerd"/>
-								<img src="/img/home/arrow-active.png" class="arrow" alt=""/>
-							</div>
-							<div class="tab-title">
-								<h3>Mayor</h3>
-								<h4>Tammy de Weerd</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			
+<body id="home">
 
-				<div class="row">
-				
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<a class="homelinks" href="/finances.aspx">
-						<div class="tab-wrap">
-							<div class="tab-icon">
-							   <img id="homeicons" src="/img/budget.png" alt=""/>
-							</div>
-							<div class="tab-title">
-								<h3 class="editable">Finances</h3>
-							</div>
-						</div></a>
-					</div>
+    <div id="wrapperfix">
 
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<a class="homelinks" href="/jobs.aspx">
-						<div class="tab-wrap">
-							<div class="tab-icon">
-								<img id="homeicons" src="/img/cityicon2.png" alt=""/>
-							</div>
-							<div class="tab-title">
-									<h3>Jobs</h3>
-							</div>
-						</div></a>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<a class="homelinks" href="/news_events.aspx?id=23126">
-						<div class="tab-wrap">
-							<div class="tab-icon">
-								<img class ="icon" id="homeicons" src="/img/events.png" alt=""/>
-							</div>
-							<div class="tab-title">
-								<h3>Events</h3>
-							</div>
-						</div></a>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<a class="homelinks" href="http://meridiancity.us7.list-manage1.com/subscribe?u=53b03dd2c15e03604fcc94bd5&id=bbf84792ce">
-						<div class="tab-wrap">
-							<div class="tab-icon">
-								<img class ="icon" id="homeicons" src="/img/email.png" alt=""/>
-							</div>
-							<div class="tab-title">
-								<h3>Newsletter</h3>
-							</div>
-						</div></a>
-					</div>
-				</div>
-			</div>
+        <div id="headerfix">
+            {% include header.html %}
+            {% include nav.html %}
+            {% include nav-breadcrumbs.html %}
+        </div>
+        <div id="contentfix">
+            {{ content }}
+        </div>
+         <div id="footer-top-request" class="no-print">
+            <div class="container boxed">
+                <h3>Top Requests</h3>
+                <div class="top-links">
+                    <ul>
+                        <li class="col-md-3">
+                            <a class="parent-link" href="https://meridianpay.billingdoc.net/" target="_blank">Pay Utility Bill</a>
 
-		</div>
+                        </li>
+                        <li class="col-md-3">
+                            <a class="parent-link" href="/jobs.aspx">Jobs</a>
 
-		<div class="boxed top-bar">
-			<div class="container boxed">
-				<div class="row">
-					<div class="col-xs-12">
+                        </li>
+                        <li class="col-md-3">
+                            <a class="parent-link" href="/parks_rec.aspx">Parks &amp; Recreation</a>
 
-						<div class="left twitter">
-						   <i class="icon icon-twitter left" style="margin-right: 5px"></i>
-							<div class="left url">
-								Meridian City
-								<a href="https://twitter.com/meridianidaho" target="_blank">@MeridianIdaho</a> 
-							</div> 
-							<div id="tweets" class="left" style="width: 72%">
-							</div>
-						</div>
-					</div>
-					<div class="left cta">
-						
-						<a href="https://www.youtube.com/user/MeridianTWIM/featured" target="_blank" style="text-decoration: none">
-						
-							</a>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-		
-	
+                        </li>
+                        <li class="col-md-3">
+                            <a class="parent-link" href="/activityguide">Activity Guide</a>
 
-	<div id="city-news" class="modal fade tab-modal" tabindex="-1" role="dialog" aria-labelledby="city-news-popup" aria-hidden="true">
-		<div class="modal-dialog container" style="overflow: auto; height: 675px; width: 60%; min-width: 480px">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="icon icon-search-close"></i></button>
-				</div>
-				<iframe style="width: 100%; height: 630px; min-width: 480px" src="http://www.meridiancity.org/city_news_modal.aspx"></iframe>
-			</div>
-		</div>
-	</div>
+                        </li>
+                        <li class="col-md-3">
+                            <a class="parent-link" href="/city_news.aspx">City News</a>
+                        </li>
 
+                        <li class="col-md-3">
+                            <a class="parent-link" href="/calendar.aspx">Community Calendar</a>
+                        </li>
 
-	
+                        <li class="col-md-3">
+                            <a class="parent-link" href="/fire">Fire Department</a>
 
+                        </li>
+                        <li class="col-md-3">
+                            <a class="parent-link" href="/police.aspx">Police Department</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-	<div id="events" class="modal fade tab-modal" tabindex="-1" role="dialog" aria-labelledby="events-popup" aria-hidden="true">
-		<div class="modal-dialog container" style="overflow: auto; height: 670px">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="icon icon-search-close"></i></button>
-				</div>
-				<b>Please click on calendar event to view details.&nbsp;&nbsp;To add a new event, <a href="calendarEvent.aspx" id="">click here</a>.<br />
-					<br />
-				</b>
-				<div>
-				</div>
-				<iframe style="width: 100%; height: 600px; min-width: 480px" src="https://calendar.google.com/calendar/embed?src=jb4qf9l1m2njui317ie9a89t30s71fjc%40import.calendar.google.com&mode=agenda&ctz=America/Denver" border="0" scrolling="no"></iframe>
-			</div>
-		</div>
-	</div>
+    </div>
+    <!--[if (gte IE 9)|!(IE)]>
+    <!-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--<![endif]-->
 
-	
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/easing-1.3.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/resize-sensor.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/main.js"></script>
 
-	 <div id="parks" class="modal fade tab-modal img-text" tabindex="-1" role="dialog" aria-labelledby="parks-popup" aria-hidden="true">
-		<div class="modal-dialog container">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="icon icon-search-close"></i></button>
-				</div>
-				<div class="modal-body">
-					<div class="row without-desktop-margin">
-						<img alt="Kleiner Memorial Park" src="/img/parks_modal.jpg" class="col-lg-4 col-md-4 col-sm-4 col-xs-12" />
-						<div class="right-content col-lg-8 col-md-8 col-sm-8 col-xs-12">
-							<div class="head">
-								<h2 class="left">Parks and Recreation</h2>
-								<a href="http://www.meridiancity.org/activityguide/" class="right">View Activity Guide</a>
-							</div>
-							<hr />
-							<p>
-								The Parks and Recreation Department’s mission is to enhance the community’s quality of life by providing innovatively designed parks, connected pathways, 
-							   and diverse recreational opportunities for all citizens of Meridian that create lasting memories.<br />
-							</p>
-							
-							<p>
-								The department maintains roughly 255 acres of developed park land and over 100 acres of undeveloped park land, 
-								 including nearly 15 miles of multi-use pathways and 4,000 trees in the urban forest system. They play host to 
-								 10 major community events such as CableONE Movie Nights, Christmas in Meridian and Unplug and Be Outside Week.
-								 The department is also in charge of community activities, sports leagues and youth camps that grow in 
-								 popularity each year!<br />
-							</p>
-							<p>
-								If you wish to RESERVE A PICNIC SHELTER in any of our City parks, you must do so by calling us at (208) 888-3579 or 
-								by visiting the department’s office in person on the 2nd floor of Meridian City Hall, located at 33 E. Broadway Avenue in downtown Meridian. 
-								Payment via credit card or check is required at the time of reservation. Tentative reservations or "holds" cannot be made. 
-								To learn more about shelter options or to check shelter availability, please <a href="https://apm.activecommunities.com/meridianparksandrec/Home" target="_blank">click here</a>.
-								<br /><br />   
-								Visit the Parks and Recreation homepage to learn more about our parks, the department’s plans for the future,  locate event information and more.</p>
+    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-							 <hr style="margin-top: 20px; margin-bottom: 10px; border-bottom: 1px solid #dddddd" />
-							<p>
-								<a href="http://www.meridiancity.org/parks_rec.aspx" class="link right" style="margin-right: 0px;">Homepage</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="mayor" class="modal fade tab-modal img-text" tabindex="-1" role="dialog" aria-labelledby="mayor-popup" aria-hidden="true">
-		<div class="modal-dialog container">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="icon icon-search-close"></i></button>
-				</div>
-				<div class="modal-body">
-					<div class="row without-desktop-margin">
-						<img src="/img/tammy.jpg" alt="Mayor Tammy sitting at desk" class="col-lg-4 col-md-4 col-sm-4 col-xs-12" />
-						<div class="right-content col-lg-8 col-md-8 col-sm-8 col-xs-12">
-							<div class="head">
-								<h2 class="left">Welcome</h2>
-								<a href="/mayors_office.aspx" class="right">Mayor's Office</a>
-							</div>
-							<hr />
-							<p>
-								Meridian is a vibrant community and a premier city to live, work, and raise a family. As Mayor my main commitment is to our fellow neighbors and friends to help them realize this vision. 
-							</p>
-							<p>
-								Here you will find useful and timely information regarding service programs, ways to get involved in our wonderful community, as well as contact information for the Mayor's Office.
-							</p>
-							<p>
-								As a community our focus on being a Star of the New West begins with transforming Meridian into a 21st century city. Meridian is uniquely conducive to supporting a broad array of business activities while maintaining the high quality lifestyle and focus on families we so greatly value. Fulfilling the needs of businesses and families begins with having a safe and caring community that provides quality education, family-wage jobs, cutting-edge healthcare, diverse housing options, a trained workforce, as well as an abundance of recreation, shopping, dining, and entertainment opportunities.
-							</p>
-							<p>
-								If you are a lifelong resident or first-time visitor, I encourage you to explore our website and learn more about our amazing community. Consider how you can be a part of our vision and achieve your goals in Meridian. 
-							</p>
-							<p>
-								Please feel free to stop by to contact me or my office staff regarding any questions or concerns. Communicating is easy; connect with me on Facebook or LinkedIn or visit my office located on the third floor of Meridian City Hall.  Visitor parking is available in the large parking lot in front of City Hall.
-							</p>
-							<hr style="margin-top: 20px; margin-bottom: 10px; border-bottom: 1px solid #dddddd" />
-							<p>
-								<img width="150" height="35" src="/img/home/mayor-signature@2x.png" alt="Mayor Tammy de Weerd's signature" />
-								<a href="/blog/" class="link right" style="margin-right: 0px;">Read Mayor’s Blog</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	{% include footer.html %}
-
-	<script type="text/javascript" src="js/fetcher.js"></script>
-	<script type="text/javascript">
-
-		//This code calls the function from new_js/fetcher.js to get the last tweet and format it to fit our "tweets" div in the main page
-		var config1 = {
-			"id": '623169563044089857',
-			"domId": 'tweets',
-			"maxTweets": 1,
-			"enableLinks": true,
-			"showPermalinks": false,
-			"showUser": false,
-			"showTime": false,
-			"showInteraction": false
-		};
-		twitterFetcher.fetch(config1);
-	</script>
-	 
-</div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </body>
-</html>		
+
+</html>
