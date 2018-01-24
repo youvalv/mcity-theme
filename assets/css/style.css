@@ -210,7 +210,7 @@ HEADER
     height: 119px;
     width: 100%;
     z-index: 10;
-    background-image: url("../img/home/drop-shadow.png");
+    background-image: url("http://meridiancity.org/img/home/drop-shadow.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     padding-bottom: 9px;
@@ -490,7 +490,7 @@ body.shrinked #header {
 
 #header .navigation li.last-child {
     margin-right: 0px;
-    background-image: url("../img/devider.png");
+    background-image: url("http://meridiancity.org/img/devider.png");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -637,7 +637,7 @@ body.shrinked #header .navigation li .submenu {
 }
 
 #header .navigation .submenu ul a.parent-link {
-    background-image: url("../img/arrow-right.png");
+    background-image: url("http://meridiancity.org/img/arrow-right.png");
     background-position: right center;
     background-repeat: no-repeat;
     border-bottom: 1px solid #d0d1d1;
@@ -2126,7 +2126,7 @@ SIDEBAR EVENTS PAGE
     border-radius: 0;
 }
 
-#events .sidebar-events .datetimepicker .bootstrap-datetimepicker-widget.dropdown-menu.top:after, #events .sidebar-events .datetimepicker .bootstrap-datetimepicker-widget.dropdown-menu.top:before, {
+#events .sidebar-events .datetimepicker .bootstrap-datetimepicker-widget.down-menu.top:after, #events .sidebar-events .datetimepicker .bootstrap-datetimepicker-widget.dropdown-menu.top:before, {
     right: 7px;
     left: auto;
 }
@@ -2788,7 +2788,7 @@ FOOTER
 
 
 #footer-socket a label {
-    background-image: url("../img/home/pop-up.png");
+    background-image: url("http://meridiancity.org/img/home/pop-up.png");
     color: #fff;
     font-family: Open Sans;
     font-size: 12px;
@@ -3144,7 +3144,7 @@ body.show-mobile-menu .nav-menu-mobile {
     height: 24px;
     color: #edb11f;
     font-size: 24px;
-    background-image: url('../img/icon/mobile-menu.png');
+    background-image: url('http://meridiancity.org/img/icon/mobile-menu.png');
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: none;
