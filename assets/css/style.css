@@ -1351,7 +1351,7 @@ section.text-section ul,
 section.text-section ol {
     font-family: Open Sans;
     font-size: 15px;
-    list-style: inside none disc;
+    list-style: inside disc;
     line-height: 20px;
 }
 
