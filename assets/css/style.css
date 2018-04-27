@@ -534,6 +534,10 @@ body.shrinked #header {
     padding-right: 15px;
 }
 
+#searchlabel {
+color: #edb11f;
+}
+
 .search-popup {
     width: 738px;
 }
