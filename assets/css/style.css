@@ -559,7 +559,7 @@ body.shrinked #header {
     min-width: 40px;
     padding: 0;
     position: absolute;
-    right: 0;
+    right: 50;
     bottom: 17px;
     width: 40px;
     z-index: 2;
