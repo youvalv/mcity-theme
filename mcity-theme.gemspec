@@ -7,8 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["croebuck@meridiancity.org"]
 
   spec.summary       = %q{Template elements for Meridian City websites}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.homepage      = https://github.com/MeridianIdaho/mcity-theme
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
 
