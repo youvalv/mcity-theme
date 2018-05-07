@@ -210,7 +210,7 @@ HEADER
     height: 119px;
     width: 100%;
     z-index: 10;
-    background-image: url("../img/home/drop-shadow.png");
+    background-image: url("http://meridiancity.org/img/home/drop-shadow.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     padding-bottom: 9px;
@@ -490,7 +490,7 @@ body.shrinked #header {
 
 #header .navigation li.last-child {
     margin-right: 0px;
-    background-image: url("../img/devider.png");
+    background-image: url("http://meridiancity.org/img/devider.png");
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -532,6 +532,10 @@ body.shrinked #header {
 
 #header .navigation li.last-child img {
     padding-right: 15px;
+}
+
+#searchlabel {
+color: #edb11f;
 }
 
 .search-popup {
@@ -637,7 +641,7 @@ body.shrinked #header .navigation li .submenu {
 }
 
 #header .navigation .submenu ul a.parent-link {
-    background-image: url("../img/arrow-right.png");
+    background-image: url("http://meridiancity.org/img/arrow-right.png");
     background-position: right center;
     background-repeat: no-repeat;
     border-bottom: 1px solid #d0d1d1;
@@ -890,7 +894,7 @@ strong.notification {
 .category-nav li a,
 .sidebar-nav-with-icon li a {
     font-size: 15px;
-    background-image: url("../img/arrow-right.png");
+    background-image: url("http://meridiancity.org/img/arrow-right.png");
     background-position: right center;
     background-repeat: no-repeat;
     color: #333333;
@@ -1076,7 +1080,7 @@ button.link {
     font-weight: bold;
     display: inline-block;
     background-color: transparent;
-    background-image: url("../img/arrow-right.png");
+    background-image: url("http://meridiancity.org/img/arrow-right.png");
     background-position: right center;
     background-repeat: no-repeat;
     border: 0;
@@ -1351,7 +1355,7 @@ section.text-section ul,
 section.text-section ol {
     font-family: Open Sans;
     font-size: 15px;
-    list-style: inside none disc;
+    list-style: inside disc;
     line-height: 20px;
 }
 
@@ -2126,7 +2130,7 @@ SIDEBAR EVENTS PAGE
     border-radius: 0;
 }
 
-#events .sidebar-events .datetimepicker .bootstrap-datetimepicker-widget.dropdown-menu.top:after, #events .sidebar-events .datetimepicker .bootstrap-datetimepicker-widget.dropdown-menu.top:before, {
+#events .sidebar-events .datetimepicker .bootstrap-datetimepicker-widget.down-menu.top:after, #events .sidebar-events .datetimepicker .bootstrap-datetimepicker-widget.dropdown-menu.top:before, {
     right: 7px;
     left: auto;
 }
@@ -2586,105 +2590,7 @@ FOOTER
     color: #ffffff;
 }
 
-
-
-
-#footer-top-request {
-    height: 300px;
-    background-color: #edb11f;
-    border-bottom: 4px solid #07528c;
-    -webkit-box-shadow: inset 0px 4px 18px -11px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 4px 18px -11px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 4px 18px -11px rgba(0,0,0,0.75);
-}
-
-#home #footer-top-request {
-    display: block;
-}
-
-#footer-top-request h3 {
-    text-align: center;
-    font-family: "Open Sans",sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    color: #333;
-    padding-top: 12px;
-    padding-bottom: 33px;
-    margin-bottom: 0px;
-    border-bottom: 2px solid #ffffff;
-}
-
-#footer-top-request h3:before {
-    content: "g";
-    display: block;
-    color: #ffffff;
-    font-family: "meridian-icons" !important;
-    font-size: 36px;
-    height: 36px;
-    font-style: normal !important;
-    font-variant: normal !important;
-    font-weight: normal !important;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1;
-}
-
-#footer-top-request .top-links .container {
-    border-top: 2px solid #ffffff;
-    padding: 0;
-}
-
-#footer-top-request ul {
-    margin: 0 -20px;
-}
-
-
-#footer-top-request .top-links li a {
-    border-bottom: 1px solid #ffffff;
-    color: #444444;
-    display: block;
-    line-height: 40px;
-    overflow: hidden;
-    padding-right: 20px;
-    text-overflow: ellipsis;
-    width: 100%;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 9px 10px;
-    -webkit-transition: color 0.2s ease-in 0s, border 0.2s ease-in 0s;
-    -moz-transition: color 0.2s ease-in 0s, border 0.2s ease-in 0s;
-    -o-transition: color 0.2s ease-in 0s, border 0.2s ease-in 0s;
-    transition: color 0.2s ease-in 0s, border 0.2s ease-in 0s;
-}
-
-#footer-top-request .top-links li a:hover {
-    color: #07528c;
-    border-bottom: 1px solid #07528c;
-    text-decoration: none !important;
-    -webkit-transition: color 0.2s ease-in 0s, border 0.2s ease-in 0s;
-    -moz-transition: color 0.2s ease-in 0s, border 0.2s ease-in 0s;
-    -o-transition: color 0.2s ease-in 0s, border 0.2s ease-in 0s;
-    transition: color 0.2s ease-in 0s, border 0.2s ease-in 0s;
-}
-
-#footer-top-request .top-links li a:hover:after {
-    color: #07528c;
-}
-
-#footer-top-request .top-links li a:after {
-    -moz-osx-font-smoothing: grayscale;
-    color: #444444;
-    content: "H";
-    float: right;
-    font-family: "meridian-icons" !important;
-    font-size: 13px;
-    font-style: normal !important;
-    font-variant: normal !important;
-    font-weight: normal !important;
-    height: 13px;
-    line-height: 1;
-    width: 12px;
-    margin-top: 15px;
-}
+/*footer top-request removed from here */
 
 #footer .top-part {
     padding-top: 30px;
@@ -2886,7 +2792,7 @@ FOOTER
 
 
 #footer-socket a label {
-    background-image: url("../img/home/pop-up.png");
+    background-image: url("http://meridiancity.org/img/home/pop-up.png");
     color: #fff;
     font-family: Open Sans;
     font-size: 12px;
@@ -3242,7 +3148,7 @@ body.show-mobile-menu .nav-menu-mobile {
     height: 24px;
     color: #edb11f;
     font-size: 24px;
-    background-image: url('../img/icon/mobile-menu.png');
+    background-image: url('http://meridiancity.org/img/icon/mobile-menu.png');
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: none;
