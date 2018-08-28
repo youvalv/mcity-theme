@@ -3773,3 +3773,40 @@ body.show-mobile-menu #header .navigation .submenu .container {
         top: 0 !important;
     }
 }
+
+/* Feedback */
+#thumbs {
+	margin-top: 30px;
+}
+
+#thumbs svg {
+	margin-top: 10px;
+}
+
+#sendFeedback {
+	margin-top: 10px;
+}
+
+#thumbs input {
+	visibility:hidden;
+}
+
+.iconradio {
+	fill: #696969;
+}
+
+.iconradio:hover {
+	fill: #007dea;
+}
+
+.iconradio{
+	width:28px; 
+	height:28px;
+}
+
+#thumbs label input[type="radio"]:checked ~ svg {
+	fill: #004b8d;
+	width:32px; 
+	height:32px;
+}
+/*end feedback*/
