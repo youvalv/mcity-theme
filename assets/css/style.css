@@ -3785,9 +3785,7 @@ body.show-mobile-menu #header .navigation .submenu .container {
 
 #sendFeedback {
 	margin-top: 10px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+	background: #D3D3D3;
 }
 
 #thumbs input {
