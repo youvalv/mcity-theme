@@ -3791,7 +3791,7 @@ body.show-mobile-menu #header .navigation .submenu .container {
 }
 
 #thumbs input {
-	visibility:hidden;
+	opacity:0;
 }
 
 .iconradio {
