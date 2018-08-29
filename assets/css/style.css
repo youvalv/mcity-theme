@@ -3785,6 +3785,9 @@ body.show-mobile-menu #header .navigation .submenu .container {
 
 #sendFeedback {
 	margin-top: 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 #thumbs input {
@@ -3810,9 +3813,4 @@ body.show-mobile-menu #header .navigation .submenu .container {
 	height:32px;
 }
 
-#thumbs btn {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-}
 /*end feedback*/
