@@ -1,5 +1,8 @@
 <form action="https://formspree.io/myjryjzx" method="POST" id="feedback" style="margin-top: 20px;">
 	<input type="hidden" name="Page Feedback">
+	<input type="hidden" name="Page Title" value="{{ page.title }}">
+	<input type="hidden" name="Page URL" value="{{ site.url }}{{ page.url }}">
+	<input type="hidden" name="Page Path" value="{{ page.path }}">    
 	<input type="text" name="_gotcha" style="display: none"> 
 	<div class="CForms"> 
 		<fieldset id="thumbs">
