@@ -3809,4 +3809,10 @@ body.show-mobile-menu #header .navigation .submenu .container {
 	width:32px; 
 	height:32px;
 }
+
+#thumbs btn {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
 /*end feedback*/
