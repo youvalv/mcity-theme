@@ -3811,7 +3811,7 @@ body.show-mobile-menu #header .navigation .submenu .container {
 	height:32px;
 }
 
-#invisilabel {
+label#invisilabel {
 	font-size: 4px;
 	opacity:0;
 }
