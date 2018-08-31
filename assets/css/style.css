@@ -3812,6 +3812,7 @@ body.show-mobile-menu #header .navigation .submenu .container {
 }
 
 #feedback label{
+	font-size: 5px;
 	opacity:0;
 }
 
