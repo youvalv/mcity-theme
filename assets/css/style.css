@@ -3811,7 +3811,7 @@ body.show-mobile-menu #header .navigation .submenu .container {
 	height:32px;
 }
 
-#thumbs label#feedback {
+#feedback label{
 	opacity:0;
 }
 
