@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "mcity-theme"
-  spec.version       = "0.1.72"
+  spec.version       = "0.1.73"
   spec.authors       = ["Catherine Roebuck"]
   spec.email         = ["croebuck@meridiancity.org"]
 
