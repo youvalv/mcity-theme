@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
     <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/assets/css/meridian-icons.css">
+    {% if page.theme_css %}
+      {% for themecss_file in page.theme_css %}
+      <link href='/assets/css/{{ themecss_file }}.css type="text/css" rel="stylesheet">
+      {% endfor %}
+    {% endif %}
     {% if page.custom_css %}
       {% for css_file in page.custom_css %}
       <link href='{{ site.baseurl }}/css/{{ css_file }}.css' type="text/css" rel="stylesheet">
