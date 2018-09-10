@@ -1,0 +1,15 @@
+thead tr th {
+	font-weight: bolder;
+	background: #bbc6ce;
+}
+
+tr:nth-child(even) td {
+	background: #ecf0f3;
+}
+
+table th, table td {
+	padding: 16px;
+	border: 1px solid #95a0ad;
+	font-weight: normal;
+	text-align: left;
+}
