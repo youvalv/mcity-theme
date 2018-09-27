@@ -1,0 +1,39 @@
+.Cforms {
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.Cforms p{
+	font-size: 18px;
+}
+caption{
+	font-size: 21px;
+	font-weight: 600;
+	color: #000;
+}
+
+label, th {
+	font-weight: 600;
+}
+
+tr, th, td {
+	padding: 10px;
+	border: 1px solid grey;
+}
+
+.spaced {
+	margin-bottom: 35px;
+}
+
+.minspaced {
+	margin-bottom: 10px;
+
+.cbox {
+	height: 20px;
+	width: 20px;
+}
+	
+.cboxonly {
+	list-style-type: none;
+}
+
