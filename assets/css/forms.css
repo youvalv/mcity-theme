@@ -28,9 +28,12 @@ tr, th, td {
 .minspaced {
 	margin-bottom: 10px;
 
-input.cbox {
+.cbox {
 	height: 20px;
 	width: 20px;
-	list-style-type: none;
+}
+	
+.cboxonly { 
+	list-style: none;
 }
 
