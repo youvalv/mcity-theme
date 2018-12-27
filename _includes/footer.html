@@ -87,9 +87,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="left">
-                        © Copyright <script type="text/javascript">
-                         document.write(new Date().getFullYear());
-                        </script>, Meridian, Idaho.
+                        © Copyright <span id="copyrightYear"> </span>, Meridian, Idaho.
                         <label>All Rights Reserved. <a href="/government/privacy.html">Privacy Statement</a></label>
                     </div>
                     <div class="right">
@@ -104,3 +102,4 @@
         </div>
     </div>
 </div>
+<script>var date = new Date().getFullYear(); document.getElementById("copyrightYear").innerHTML = date;</script>
