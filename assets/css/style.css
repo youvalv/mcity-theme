@@ -3819,7 +3819,7 @@ label#invisilabel {
 
 /* style copyright year */
 
-#footer-socket span #copyrightYear {
+span#copyrightYear {
 	padding: 0px;
 }
 
