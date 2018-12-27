@@ -3816,3 +3816,11 @@ label#invisilabel {
 }
 
 /*end feedback*/
+
+/* style copyright year */
+
+#copyrightYear {
+	padding: 0
+}
+
+/* end copyright year*/
