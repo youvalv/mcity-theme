@@ -3820,7 +3820,7 @@ label#invisilabel {
 /* style copyright year */
 
 #footer-socket span #copyrightYear {
-	padding: 0
+	padding: 0px;
 }
 
 /* end copyright year*/
