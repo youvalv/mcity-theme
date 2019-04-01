@@ -1,0 +1,37 @@
+.blue-btn {
+    display: block;
+    margin: 0px auto 20px auto;
+    border: 2px solid #004b8d;
+    font-size: 20px;
+    white-space: normal;
+}
+
+.grey-btn {
+    display: block;
+    margin: 0px auto 20px auto;
+    border: 2px solid #bdbdbd;
+    font-size: 20px;
+    white-space: normal;
+    cursor: default;
+    color: grey;
+}
+
+.grey-btn:hover {
+    color: grey;
+}
+
+.lb-btn {
+    display: block;
+    margin: 10px 0px 40px 0px;
+    width: 100%;
+    max-width: 360px;
+    border: 2px solid #5587B3;
+    /*background: #F9E5B4;*/
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+img.btnIcon {
+    padding-left: 20px;
+    height: 45px;
+}
