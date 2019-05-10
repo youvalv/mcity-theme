@@ -89,7 +89,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <script src='{{ site.baseurl }}/js/{{ js_file }}.js' type="text/javascript"></script>
       {% endfor %}
     {% endif %}
-
+    {% if page.linked_js %}
+        {{page.linked_js}}
+    {% endif %}
 </body>
 
 </html>
