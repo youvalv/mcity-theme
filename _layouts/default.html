@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
     <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/assets/css/meridian-icons.css">
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/assets/css/backToTop.css">
     {% if page.custom_head %}
       {{ page.custom_head }}
     {% endif %}
@@ -83,11 +84,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="{{site.baseurl}}/assets/js/resize-sensor.js"></script>
     <script type="text/javascript" src="{{site.baseurl}}/assets/js/jquery.sticky-kit.min.js"></script>
     <script type="text/javascript" src="{{site.baseurl}}/assets/js/main.js"></script>
-
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/backToTop.js"></script>
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
       <script src='{{ site.baseurl }}/js/{{ js_file }}.js' type="text/javascript"></script>
