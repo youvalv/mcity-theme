@@ -193,6 +193,7 @@ input#search-header:-moz-placeholder {
 
 .ccblog img {
     max-width: 100%;
+    height: auto;
 }
 
 /*#footer .top-part ul li.rss:hover,*/
