@@ -103,7 +103,7 @@ ul, ol {
 
 input[type=text], textarea {
     -webkit-appearance: none;
-    border-radius: 0;
+    border-radius: 4px;
 }
 
 
