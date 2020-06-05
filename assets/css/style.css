@@ -3832,3 +3832,7 @@ span#copyrightYear {
 }
 
 /* end copyright year*/
+
+.btn-primary {
+	background-color: #004b8d;
+}
