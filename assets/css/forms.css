@@ -39,3 +39,6 @@ tr, th, td {
 	list-style: none;
 }
 
+input[type=text] {
+	border-radius: 4px;
+}
