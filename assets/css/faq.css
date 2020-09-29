@@ -1,0 +1,22 @@
+.card-header {
+	padding: 8px;
+	border-left: 10px solid #004b8d;
+	background-color: #eaf9fe;
+	font-size: 15px;
+}
+
+.card-header .inner-page #content p {
+	color: #fff;
+	font-size: 15px;
+}
+
+.card-body {
+	padding: 8px;
+	border-left: 10px solid #eeb211;
+	font-size: 15px;
+	line-height: 1.2;
+}
+
+.card {
+	max-width: 100%;
+}
