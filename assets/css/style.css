@@ -506,7 +506,7 @@ body.shrinked #header {
     background-image: url("https://meridiancity.org/img/devider.png");
     background-position: left center;
     background-repeat: no-repeat;
-    padding-left: 30px;
+    /*padding-left: 30px;*/
     position: relative;
     z-index: 1000;
     float: right;
